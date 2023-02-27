@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.foto {
+    width: 100%;
+    height: 100vh;
+}
+h1 {
+    position: absolute;
+    z-index: 10;
+    color: antiquewhite;
+    top: 50px;
+    font-size: 50px;
+    font-family: 'Shantell Sans', cursive;
+}
+p {
+    position: absolute;
+    z-index: 10;
+    color: antiquewhite;
+    top: 150px;
+    font-size: 25px;
+    font-family: 'Shantell Sans', cursive;
+    margin-left: ;
+}
+button {
+    position: absolute;
+    z-index: 10;
+    color: antiquewhite;
+    top: 250px;
+    font-size: 25px;
+    font-family: 'Shantell Sans', cursive;
+    padding: 10px;
+    background-color:#71587e;
+}
+button:hover {
+    cursor: pointer;
+}
+h2 {
+    position: absolute;
+    bottom: 300px;
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: 'Shantell Sans', cursive;
+    opacity: 0;
+}
+.active {
+    opacity: 1;
+    flex: 3;
+}
+
+@media all and (max-width: 1000px) {
+    p {
+        margin-left: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    p {
+        margin-left: 20px;
+    }
+    button {
+        top: 350px;
+    }
+    h2 {
+        bottom: 100px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
